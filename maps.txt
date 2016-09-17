@@ -1,0 +1,17 @@
+function clothing()
+{
+  
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(12.2958,76.6394),zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=clothing"></script>
+
+<div id="map" style="width:100%;height:500px" ></div>

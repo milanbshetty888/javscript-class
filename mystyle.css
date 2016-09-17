@@ -1,0 +1,62 @@
+	table {
+	 border: px solid red
+	}
+	h2 {
+	text-align:center
+	}
+
+
+
+	ul li {
+	font-size: 15px; color: red; font-style: italic;
+	}
+	ol li {
+	font-size: 15px; color: blue; font-style: italic;
+	}
+
+.class1 {font-size: 30px;color: blue;}
+
+
+#info { padding: 10px; text-align:left; color:black; font-size:15px;}
+
+
+.para-mod {letter-spacing:5px; word-spacing:5px;}
+
+
+.fontstyle {
+	font-size:16px;
+	font-style:italic;
+	font-weight:100;
+	font-stretch:expand;
+}
+
+
+.marg {margin-top:15px;
+	margin-left:15px;
+	margin-right:15px}
+
+.margprice {
+	border-left:10px;
+	border-right:10px;
+}
+
+.marg-img {
+	border:3px dashed green;
+	margin-top:15px;
+	margin-left:15px;
+	margin-right:15px;
+	margin-bottom:15px;
+	padding: 5px;
+	}
+
+	.aboutimg {position:relative; left:80px; top:20px;}
+
+
+
+a:link { color: red; opacity: .8;}
+a:visited { color: blue;}
+a:hover {color: green; opacity: 1; }
+a:active {color: #FF00CC}
+
+
+input ~ p { color: red; }
