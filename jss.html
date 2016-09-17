@@ -1,0 +1,63 @@
+<html>
+<body>
+<h1>My Web Page</h1>
+
+<p id="myPar">I am a paragraph.</p>
+<div id="myDiv">I am a div.</div>
+<p id="inputt">I am a paragraph.</p>
+
+<p>  
+<button type="button" onclick="myFunction()" onmouseover="over()" onmouseout="out()">Try it</button>
+</p>
+
+<p>When you click on "Try it", the two elements will change.</p>
+
+<script type="text/javascript">
+	var x=40;
+	var y=20, z;
+
+	z=x+y;
+	document.write(z+"=x+y"+"<br>");
+	z=x-y;
+	document.write(z+"=x-y"+"<br>");
+	z=x*y;
+	document.write(z+"=x*y"+"<br>");
+	z=x/y;
+	document.write(z+"=x/y"+"<br>");
+	z=x%y;
+	document.write(z+"=x%y"+"<br>");
+	// i am starting a function
+	x=myfunction(5,4);
+	console.log(x);
+	
+    document.write("<p>using \\n <br/> inside javascript</p>");
+
+
+	//function starts from here.................
+	function myfunction(a, b){
+
+		if((Math.floor((Math.random() * 10) + 1))%2)
+			myFunction();
+		return a+b;
+			}
+
+	function over()
+	{
+		//document.write("overrr<br/>")
+	}
+
+	function out()
+	{
+		//document.write("overrr<br/>")
+	}
+
+	document.getElementById("inputt").innerHTML=x;
+
+	function myFunction() {
+    document.getElementById("myPar").innerHTML = "myFunction called111";
+    document.getElementById("myDiv").innerHTML = "myFunction called222222222";
+}
+</script>
+
+</body>
+</html>

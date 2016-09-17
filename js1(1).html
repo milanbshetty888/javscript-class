@@ -1,0 +1,98 @@
+<html>
+<body>
+<h1>My Web Page</h1>
+<p>  
+
+input 1:<input type="number" id="ip1" onchange="change()"><br/>
+select operation:<select id="sym" onchange="change()">
+	<option>+</option>
+	<option>-</option>
+	<option>*</option>
+	<option>/</option>
+	<option>%</option>
+</select><br/>
+input 2:<input type="number" id="ip2" onchange="change()">
+<button type="button" onclick="myFunction()">solution</button>
+
+<!-- to dispaly the final equation and its result.... -->
+<h2 id="res"></h2>
+
+<!-- Below lines works for onsubmit event..... -->
+<!-- <form onsubmit="return myFunction()">
+input 1:<input type="number" id="ip1"><br/>
+select operation:<select id="sym">
+	<option>+</option>
+	<option>-</option>
+	<option>*</option>
+	<option>/</option>
+	<option>%</option>
+</select><br/>
+input 2:<input type="number" id="ip2">
+<button type=submit >solution</button>
+</form> -->
+
+</p>
+
+<script type="text/javascript">
+
+	//function starts from here.................
+	function myFunction() 
+	{
+		x=(document.getElementById("ip1").value)*1;
+		y=(document.getElementById("ip2").value)*1;
+		s=(document.getElementById("sym").value);
+   
+		if(s=="+"){
+			z=x+y;
+		}
+		else if(s=="-"){
+			z=x-y;
+		}
+		else if(s=="*"){
+			z=x*y;
+		}
+		else if(s=="/"){
+			z=x/y;
+		}
+		else if(s=="%"){
+			z=x%y;
+		}
+
+		resultt= x+s+y+"="+z;
+		//to display the whole equation at the last line.........
+		document.getElementById("res").innerHTML=resultt;
+		return ;
+	}
+
+	function change()
+	{
+		z=0;
+		x=(document.getElementById("ip1").value)*1;
+		y=(document.getElementById("ip2").value)*1;
+		s=(document.getElementById("sym").value);
+
+		if(s=="+"){
+			z=x+y;
+		}
+		else if(s=="-"){
+			z=x-y;
+		}
+		else if(s=="*"){
+			z=x*y;
+		}
+		else if(s=="/"){
+			z=x/y;
+		}
+		else if(s=="%"){
+			z=x%y;
+		}
+
+		resultt= x+s+y+"="+z;
+		//to display the whole equation at the last line.........
+		document.getElementById("res").innerHTML=resultt;
+	}
+
+</script>
+
+</body>
+</html>

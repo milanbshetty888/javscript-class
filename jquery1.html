@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery test</title>
+	<!-- for this to work, include the below <script href="https:....." -->
+	<!-- <script type="text/javascript"> 
+		jQuery(document).ready(function($){
+	alert($('p').text());
+});-->
+
+
+
+<style type="text/css">
+.addclass
+{
+color: green;
+border: 1px ;
+border-style: solid;
+}
+	</style>
+
+
+</head>
+<body>
+	 
+<div class="cls1">Hello world11</div>	
+<div>Hello world22</div>	
+<div>Hello world33</div>	
+
+<a href="#" class="link1">click</a>
+<a href="#" >click</a>
+
+
+<ol>
+	<li>first</li>
+	<li>second</li>
+	<li>third</li>
+	<li>fourth</li>
+</ol>
+
+<table border="3px">
+	<tr><td>0</td><td>zero</td></tr>
+	<tr><td>1</td><td>one</td></tr>
+	<tr><td>2</td><td>two</td></tr>
+	<tr><td>3</td><td>three</td></tr>
+	<tr><td>4</td><td>four</td></tr>
+	</table>
+
+	<p>aaaaa</p>
+
+
+	<form>
+		<input type="checkbox" name="c1"/>
+		<input type="text" name="t1"/>
+		<input type="number" name="n1">
+	</form>
+
+	<form>
+		<input type="checkbox" name="c2"/>
+		<input type="text" name="t2"/>
+		<input type="number" name="n2">
+	</form>
+
+
+	<form>
+		<input type="checkbox" name="c3"/>
+		<input type="text" name="t3"/>
+		<input type="number" name="n3">
+	</form>
+
+
+<button type="button" class="b1">to hide</button>
+
+
+<button type="button" class="b2">to show</button>
+
+
+<p color="blue" class="b3">visible</p>
+
+
+ 
+<div class="alt">
+helloooo
+</div>
+
+ <button type="button" class="button1">Click Me!</button> 
+
+<div>
+<p>
+hello
+</p>
+</div>
+
+<div>
+<p>
+hello
+</p>
+</div>
+
+<a class="remove" href="https://google.com">google</a>
+<a class="remove1" href="https://google.com">google</a>
+
+<br/>
+<button type="button" class="addcontent">addcontent</button>
+<p class="addcontentp">to be added</p>
+
+<p class="click1">mouse click event</p>
+
+<ul>
+	<li class="remove1">hello</li>
+	<li class="a2">hello</li>
+	<li class="remove">hello</li>
+</ul>
+
+<ul>
+	<li class="removed">name</li>
+	<li class="removed">name</li>
+	<li class="removed">name</li>
+	<li>name</li>
+	<li>name</li>
+	<li>name</li>
+</ul>
+
+<select id="selector11">
+	<option value="red">red</option>
+	<option value="green">green</option>
+	<option value="blue">blue</option>
+</select>
+<button id="button11">to view value</button>
+
+
+<p id="mouseeve" class="mousee">para graph and mouse events</p>
+
+
+<br/>
+<p>array</p><br/>
+<div>
+	<div id="one"></div>
+	<div id="two"></div>
+	<div id="three"></div>
+	<div id="four"></div>
+	<div id="five"></div>
+</div>
+
+
+<p class="cls11">zz</p>
+<p class="cls22">zz</p>
+
+
+<!-- assignment starts here -->
+
+	
+
+<label class="lbl">email:</label>
+<input class="email1" type="text"></input><br/>
+<label class="lbl">password</label>
+<input class="pass1" type="password"></input><br/>
+<input class="check1" type="checkbox" name="ckecked">checked</input><br/>
+<button class="submit12" type="submit">submit</button>
+<button class="openup" type="submit">click here</a><br/></button>
+
+
+<br/><br/><br/><br/><br/><br/>
+<!-- scripting for jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+
+
+<!-- script for defining function  -->
+<script type="text/javascript">
+	//alert('jQuery'+jQuery.fn.jquery);
+
+	//to display the content of <p>
+//	alert($('p').text());
+
+	//to hide the contents of <nav>
+	//jQuery('nav').hide();
+
+		//to replace the content within <div>
+	//jQuery('div').text("aaaa");
+
+
+	//to change class name..... no result will be displayed
+	//jQuery('div').addClass("updateContent");
+
+	//to show the content of <div>
+	//jQuery('div').show();
+
+	//to replace the content within <div>, and hide it
+	//jQuery('div').text("aaaa").hide();
+
+	/*jQuery('div')
+		.text("aaaa")
+		.hide();
+*/
+// target = '_blank'
+
+//alert('to disp and with some function'+jQuery(document.getElementByTagName('div')).length);
+
+//alert('to disp and with some function '+jQuery('div').length);
+
+//alert('to disp and with some function '+jQuery('div.cls1').length);
+
+//alert(jQuery(document.body).attr('bgcolor')+' background');
+
+
+//jQuery('a.link1').attr("href","https://www.google.co.in");
+
+//jQuery('a.link1').attr("href","https://www.google.co.in").attr('target', '_blank');
+
+
+
+//to see the content of <ol> <li>, here its more specific
+//alert(jQuery('ol li:first').text()+"this is first value");
+
+
+//alert("selected "+ jQuery('input',$('form')).length+' inputs');
+
+//alert("selected "+ jQuery('input',document.forms[0]).length+' inputs');
+
+//alert("selected "+ jQuery('input','body').length+' inputs');
+
+//function call on mouse click event
+/*jQuery('div').click(function(){
+	jQuery('body').css('background-color','red');
+});*/
+/*
+jQuery('div.b2').hide();
+*/
+
+jQuery('button.b2').hide();
+jQuery('button.b1').click(function(){
+
+jQuery('p.b3').hide();
+jQuery('button.b1').hide();
+
+jQuery('button.b2').show();
+});
+
+jQuery('button.b2').click(function(){
+
+jQuery('p.b3').show();
+jQuery('button.b1').show();
+
+jQuery('button.b2').hide();
+});
+
+
+jQuery('button.button1').click(function(){
+
+	jQuery('div.alt').addClass("addclass");
+	//jQuery('class.tb1').attr('border','3px').css('color','red');
+
+});
+
+$("div").find("p").parent().addClass("background");
+
+//addBack() adds the property to current tag and also to its parent tag
+$("div").find("p").addBack().css('border','1px solid red');
+
+//call back function
+$("div").find("p").fadeOut('100',function(){
+	$("div").find("p").fadeIn('slow');
+});
+
+//to remove <a class="remove">
+jQuery('a').remove('.remove');
+
+//to remove the attribute property.... here href
+jQuery('a').removeAttr('href');
+
+
+jQuery('button.addcontent').click(function(){
+
+	jQuery('p.addcontentp').append(' text here');
+	//jQuery('class.tb1').attr('border','3px').css('color','red');
+
+});
+
+    $("p.click1").click(function(){
+        alert("The paragraph was clicked.");
+    });
+
+//removing
+ jQuery('ul').find('.remove1').css('background','red').end().find('.remove').css('background','green');
+
+//replacing 
+jQuery('li.removed').replaceWith('<li>removed</li>')
+
+
+//function for mouse event, mouse click
+$(document).ready(function(){
+	$("#button11").click(function(){
+		alert($("#selector11").val());
+		alert($("#selector11").text());
+	})
+});
+
+
+// function for mouse events 
+$(document).ready(function(){
+    jQuery("p.mousee").mouseover(function(){
+        jQuery("p.mousee").css("background-color", "brown").css("font-style","italic");
+    });
+    $("p.mousee").mouseout(function(){
+        $("p.mousee").css("background-color", "green").css("font-style","normal");
+    });
+});
+
+//array
+var arr=["one","two","three","four","five"];
+var obj={one: 1, two: 2, three: 3,four: 4,five: 5};
+
+jQuery.each(arr, function(i,val){
+	$("#"+val).text("vall is"+val+"-");
+	return(val!== "three");
+});
+
+jQuery.each(obj, function(i,val){
+	$("#"+i).append(document.createTextNode("-"+val));
+});
+//alert($("p.cls11").text());
+
+
+//to add content to the tags
+$("p.cls11").text("text function call and replacing");
+$("p.cls22").html("<h4>html function call and replacing</h4>");
+
+
+
+//assignment starts here
+$("input.email1").hide();
+$("input.pass1").hide();
+$("button.submit12").hide();
+$("label.lbl").hide();
+$("checkbox.check1").hide();
+
+$(document).ready(function(){
+	jQuery('button.openup').click(function(){
+
+		$("input.email1").show();
+		$("input.pass1").show();
+		$("button.submit12").show();
+		$("label.lbl").show();
+		$("checkbox.check1").show();
+	
+	})
+});
+
+
+$(document).ready(function(){
+	jQuery('button.submit12').click(function(){
+
+	/*	$("input.email1").show();
+		$("input.pass1").show();
+		$("button.submit1").show();
+		$("label.lbl").show();*/
+		x=$("input.email1").html();
+		if (x=="") {
+			//$("input.email1").css('border-style': 'solid').css('border-color': 'red');
+			alert("invalid email");
+		}
+		
+		x=$("input.pass1").html();
+		if (x=="") {
+			//$("input.email1").css('border-style': 'solid').css('border-color': 'red');
+			alert("invalid pass1");
+		}
+
+
+		/*x=$("input.email1").html();
+		alert(x);*/
+	})
+});
+
+
+
+
+</script>
+
+</body>
+</html>
+<!-- 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+append()
+prepend()
+prependTO()
+after()
+before()
+insertAfter()
+ -->

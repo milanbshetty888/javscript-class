@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p id="jslink"> </p>
+
+<input type="number" name="ip1" id="input1"></input>
+<select id="sym">
+<option>+</option>
+<option>-</option>
+<option>*</option>
+<option>/</option>
+</select>
+<input type="number" name="ip2" id="input2"></input>
+<input type="submit" name="sub" onclick="arithmatic()"></input>
+<p id="jslink1">result</p>
+
+<br/><br/>
+<button onclick="hide()" id="b1">visible</button>
+<button onclick="show()" id="b2">show</button>
+<p id="visible">click to hide</p>
+
+
+<form>
+<label>First name</label>
+<input type="text" name="fname" id="fname"></input>
+<br/>
+
+<label>last name</label>
+<input type="text" name="fname" id="lname"></input>
+<br/>
+
+<label>Age</label>
+<input type="number" name="age" id="age" ></input>
+<br/>
+
+<label>company</label>
+<input type="text" name="comp" id="comp"></input>
+<br/>
+
+<label>Designation</label>
+<input type="text" name="desi" id="desi" ></input>
+
+<input type="submit" onclick="job(); return false;"> </input>
+</form>
+<br/>
+
+<form>
+input 1:<input type="number" id="ip1" onchange="change()"><br/>
+select operation:<select id="symb" onchange="change()">
+	<option>+</option>
+	<option>-</option>
+	<option>*</option>
+	<option>/</option>
+	<option>%</option>
+</select><br/>
+input 2:<input type="number" id="ip2" onchange="change()">
+<h4 id="res">result:</h4>
+</form>
+
+<img src="1.png" onmouseover="chngimg1(this)" onmouseout="chngimg2(this)"></img>
+
+<!-- on keyup -->
+<br/><br/>
+to convert to uppercase
+<input type="text" onkeyup="keyUp()" id="key1"></input>
+<br/><br/>
+to convert to lowercase
+<input type="text" onkeyup="keydown()" id="key2"></input>
+<br/><br/>
+<!-- console log usage -->
+<button onclick="consol(1)">click to run in console</button>
+<br/><br/>
+<button onclick="jsonfunc()">view profile using jason</button>
+
+
+
+</body>
+
+
+<script type="text/javascript" src="javascriptsource.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="myPar">I am a paragraph.</p>
+<div id="myDiv">I am a div.</div>
+<p id="inputt">I am a paragraph.</p>
+
+<p>
+<button type="button" onclick="myFunction()">Try it</button>
+</p>
+
+<script>
+function myFunction() {
+    document.getElementById("myPar").innerHTML = "Hello Dolly.";
+    document.getElementById("myDiv").innerHTML = "How are you?";
+}
+</script>
+
+<p>When you click on "Try it", the two elements will change.</p>
+
+<script type="text/javascript">
+	var x=40;
+	var y=20, z;
+	z=x+y;
+	document.write(z+"=x+y"+"\n");
+	z=x-y;
+	document.write(z+"=x-y"+"\n");
+	z=x*y;
+	document.write(z+"=x*y"+"\n");
+	z=x/y;
+	document.write(z+"=x/y"+"\n");
+	z=x%y;
+	document.write(z+"=x%y"+"\n");
+	x=myFunction(5,6);
+	function myFunction(a, b){
+		return a+b;
+			}
+	document.getElementById("inputt").innerHTML=x;
+	</script>
+
+
+</body>
+</html>
